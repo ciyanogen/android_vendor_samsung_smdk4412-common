@@ -18,9 +18,6 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4412-common/proprietary/addon.d/audmodlib.sh:system/addon.d/audmodlib.sh \
     vendor/samsung/smdk4412-common/proprietary/addon.d/modid.sh:system/addon.d/modid.sh \
-    vendor/samsung/smdk4412-common/proprietary/app/As/As.apk:system/app/As/As.apk \
-    vendor/samsung/smdk4412-common/proprietary/app/AsUI/AsUI.apk:system/app/AsUI/AsUI.apk \
-    vendor/samsung/smdk4412-common/proprietary/app/ViPER4AndroidFX/ViPER4AndroidFX.apk:system/app/ViPER4AndroidFX/ViPER4AndroidFX.apk \
     vendor/samsung/smdk4412-common/proprietary/bin/basimage_ibeats.bin:system/bin/basimage_ibeats.bin \
     vendor/samsung/smdk4412-common/proprietary/bin/basimage_ibeats.bin:system/bin/basimage_ibeats_solo.bin \
     vendor/samsung/smdk4412-common/proprietary/bin/basimage_ibeats.bin:system/bin/basimage_ibeats_solo_x.bin \
@@ -90,7 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4412-common/proprietary/lib/libbeatsbass.so:system/lib/libbeatsbass.so \
     vendor/samsung/smdk4412-common/proprietary/lib/libbundlewrapper.so:system/lib/libbundlewrapper.so \
     vendor/samsung/smdk4412-common/proprietary/lib/libcyanogen-dsp.so:system/lib/libcyanogen-dsp.so \
-    vendor/samsung/smdk4412-common/proprietary/lib/libdlpdapstorage.so:system/lib/libdlpdapstorage.so \
+    vendor/samsung/smdk4412-common/proprietary/lib/libdlbdapstorage.so:system/lib/libdlbdapstorage.so \
     vendor/samsung/smdk4412-common/proprietary/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
     vendor/samsung/smdk4412-common/proprietary/lib/libLizticMetadataReader.so:system/lib/libLizticMetadataReader.so \
     vendor/samsung/smdk4412-common/proprietary/lib/libreverbwrapper.so:system/lib/libreverbwrapper.so \
