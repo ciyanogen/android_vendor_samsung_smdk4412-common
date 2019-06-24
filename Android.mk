@@ -19,4 +19,33 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter i9300 i9305 n7100 n8000 n8013 n8020 t0lte t0lteatt t0ltetmo t0ltekor t0ltejpn i605 l900 r950 i925 n5100 n5110 n5120,$(TARGET_DEVICE)),)
 include $(call first-makefiles-under,$(LOCAL_PATH))
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libMali
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_SRC_FILES := proprietary/lib/libMali.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ViPER4AndroidFX
+LOCAL_SRC_FILES := proprietary/app/ViPER4AndroidFX/ViPER4AndroidFX.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := gCam
+LOCAL_SRC_FILES := proprietary/app/GoogleCamera/gCam.apk
+LOCAL_MODULE_CLASS := APPS
+#LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_OVERRIDES_PACKAGES := Camera2 Snap
+include $(BUILD_PREBUILT)
+
 endif

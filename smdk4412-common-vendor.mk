@@ -118,3 +118,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4412-common/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
     vendor/samsung/smdk4412-common/proprietary/vendor/firmware/setfile.bin:system/vendor/firmware/setfile.bin \
     vendor/samsung/smdk4412-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+    
+PRODUCT_PACKAGES += \
+    ViPER4AndroidFX \
+    gCam
